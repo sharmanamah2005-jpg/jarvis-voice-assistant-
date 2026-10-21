@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. - Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hud">
+            <div class="status-bar">
+                <div class="status-indicator online"></div>
+                <span>J.A.R.V.I.S. Online</span>
+            </div>
+            <div class="ai-core">
+                <div class="core-ring outer"></div>
+                <div class="core-ring middle"></div>
+                <div class="core-ring inner"></div>
+                <div class="core-glow"></div>
+            </div>
+            <div class="mic-container">
+                <button id="micBtn" class="mic-btn">
+                    <span class="mic-icon"></span>
+                </button>
+            </div>
+            <div class="chat-container">
+                <div id="chatLog" class="chat-log"></div>
+                <div class="input-area">
+                    <input type="text" id="textInput" placeholder="Type a command or use voice..." disabled>
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+            <div class="commands-hud">
+                <span>Voice Active | Continuous Listening: OFF</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
